@@ -246,9 +246,8 @@ a:hover,a:active,a:focus
   width auto
   > *
     width auto
-  #nowplaying
+  #now-playing
     background-color #A9C4DB
-    padding 5px 10px
     h1
       font-size 16px
       letter-spacing 0.1em
@@ -302,19 +301,37 @@ a:hover,a:active,a:focus
       padding 5px 0
       width 100%
   .trackbar-time-container
-    bottom 25px
+    bottom 28px
     color rgba(255, 255, 255, 0.75)
     position relative
+    .trackbar-time-display
+      font-weight bold
+      font-family monospace
+      padding 4px
+      &#now-playing-time-elapsed
+        float left
+      &#now-playing-time-left
+        float right
   #queue-window
       background-color #17609D
-      bottom 4px
-      height calc(100% - 123px)
+      bottom 28px
+      height calc(100% - 84px)
       position relative
     .window-header
       background-color rgba(73, 143, 179, 0.5)
       font-size .6em
       margin-bottom 4px
-      padding 3px 0
+      padding 5px
+      .queue-duration-container
+        float right
+        padding-right 5px
+        position relative
+        top 2px
+        #queue-duration
+          font-size 1.4em
+        #queue-duration-label
+          font-size 1.2em
+          font-weight 100
 
 .button
   background #1C4B79
@@ -482,18 +499,6 @@ button:hover .icon
       padding-right 5px
       padding-top 8px
 
-#nowplaying-time-elapsed
-  float left
-  margin 4px
-  font-weight bold
-  font-family monospace
-
-#nowplaying-time-left
-  float right
-  margin 4px
-  font-weight bold
-  font-family monospace
-
 #vol
   > *
     display inline-block
@@ -552,9 +557,6 @@ button:hover .icon
 
 #organize
   width 200px
-
-#queue-duration, #queue-duration-label
-  font-size 1.4em
 
 #queue-list
   height 100%

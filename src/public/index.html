@@ -191,50 +191,45 @@
     </div>
   </div>
   <div id="mainpane">
-    <div id="nowplaying" style="display: none">
+    <div id="now-playing" style="display: none">
       <div class="top">
         <div class="song-info">
-          <div class="main-info">
-            <div class="primary">
-              <div class="song-info-label">Title:</div>
-              <div id="track-display-title" class="song-info-data"></div>
-              <div class="song-info-label">Artist:</div>
-              <div id="track-display-artist" class="song-info-data"></div>
-              <div class="song-info-label">Album:</div>
-              <div id="track-display-album" class="song-info-data"></div>
-            </div>
-            <div class="secondary">
-            </div>
-          </div>
-          <div class="playback-btns">
-            <button class="button" id="nowplaying-prev" tabindex="-1"><i class="fa fa-fast-backward"></i></button>
-            <button class="button" id="nowplaying-toggle" tabindex="-1"><i id="nowplaying-toggle-icon" class="fa fa-pause"></i></button>
-            <button class="button" id="nowplaying-stop" tabindex="-1"><i class="fa fa-stop"></i></button>
-            <button class="button" id="nowplaying-next" tabindex="-1"><i class="fa fa-fast-forward"></i></button>
-            <div id="client-vol">
-              <i class="fa fa-volume-down"></i>
-              <input type="range" id="client-vol-slider" min="0.0" max="1.0" step="0.0001" tabindex="-1">
-              <i class="fa fa-volume-up"></i>
-            </div>
-          </div>
+          <div class="song-info-label">Title:</div>
+          <div id="track-display-title" class="song-info-data"></div>
+          <div class="song-info-label">Artist:</div>
+          <div id="track-display-artist" class="song-info-data"></div>
+          <div class="song-info-label">Album:</div>
+          <div id="track-display-album" class="song-info-data"></div>
         </div>
         <div class="clearfix"></div>
       </div>
     </div>
-
     <div class="trackbar-container">
       <input type="range" id="track-slider" min="0.0" max="1.0" step="0.0001" tabindex="-1">
     </div>
     <div class="trackbar-time-container">
-      <span id="nowplaying-time-elapsed"></span>
-      <span id="nowplaying-time-left"></span>
+      <span id="now-playing-time-elapsed" class="trackbar-time-display"></span>
+      <span id="now-playing-time-left" class="trackbar-time-display"></span>
+      <div class="clearfix"></div>
     </div>
-
     <div id="queue-window" class="widget" style="display: none">
       <div class="window-header">
         <button class="button" type="button" id="auto-dj" tabindex="-1"><i class="fa fa-magic"></i> Auto DJ</button>
         <button class="button" type="button" id="queue-btn-repeat" tabindex="-1"><i class="fa fa-repeat"></i> <span id="queue-btn-repeat-label">Repeat: Off</span></button>
-        <span id="queue-duration-label"></span> <span id="queue-duration"></span>
+        <span class="playback-btns">
+          <button class="button" id="now-playing-prev" tabindex="-1"><i class="fa fa-fast-backward"></i></button>
+          <button class="button" id="now-playing-toggle" tabindex="-1"><i id="now-playing-toggle-icon" class="fa fa-pause"></i></button>
+          <button class="button" id="now-playing-stop" tabindex="-1"><i class="fa fa-stop"></i></button>
+          <button class="button" id="now-playing-next" tabindex="-1"><i class="fa fa-fast-forward"></i></button>
+          <div id="client-vol">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" id="client-vol-slider" min="0.0" max="1.0" step="0.0001" tabindex="-1">
+            <i class="fa fa-volume-up"></i>
+          </div>
+        </span>
+        <span class="queue-duration-container">
+          <span id="queue-duration-label"></span> <span id="queue-duration"></span>
+        </span>
       </div>
       <div id="queue-list">
         <div id="queue-header" class="header">
