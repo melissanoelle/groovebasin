@@ -563,27 +563,31 @@ button:hover .icon
     overflow-x hidden
     overflow-y hidden
     height 1.2em
-  span.track
-    width 26px
-  span.title
-    width 30%
-  span.artist
-    width 30%
-  span.album
-    width 30%
-  span.time
-    width 36px
   span
-    white-space nowrap
-    height 1.2em
-    overflow-x hidden
-    overflow-y hidden
+    box-sizing border-box
     float left
-    margin-right 4px
+    height 1.2em
+    overflow hidden
+    padding 0 5px
+    text-overflow ellipsis
+    white-space nowrap
+    &.track
+      text-overflow clip
+      width 3%
+    &.title
+      width 30%
+    &.artist
+      width 30%
+    &.album
+      width 30%
+    &.time
+      text-align right
+      text-overflow clip
+      width 7%
   #queue-header
     background-color rgb(31, 88, 118)
     margin-top -4px
-    padding 2px 0 1px
+    padding 0px 0 3px
   #queue-items
     clear both
     height 100%
