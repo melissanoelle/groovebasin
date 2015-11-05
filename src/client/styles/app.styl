@@ -313,12 +313,12 @@ a:hover,a:active,a:focus
       &#now-playing-time-left
         float right
   #queue-window
-      background-color #17609D
-      bottom 28px
-      height calc(100% - 84px)
-      position relative
+    background-color #303030
+    bottom 28px
+    height calc(100% - 84px)
+    position relative
     .window-header
-      background-color rgba(73, 143, 179, 0.5)
+      background-color rgba(11, 39, 65, 1)
       font-size .6em
       margin-bottom 4px
       padding 5px
@@ -587,7 +587,8 @@ button:hover .icon
       text-overflow clip
       width 7%
   #queue-header
-    background-color rgb(31, 88, 118)
+    background-color #303030
+    border-bottom 2px solid rgba(0, 0, 0, 0.15)
     margin-top -4px
     padding 0px 0 3px
   #queue-items
@@ -607,21 +608,19 @@ button:hover .icon
       overflow-y hidden
       padding-top 2px
     div:nth-child(2n+1)
-      background-color #4181B6
+      background-color #4d4d4d
     div.random
       color #96B7EB
     div.old
-      color rgba(37, 56, 77, 0.56)
+      color rgba(131, 137, 144, 1)
       font-style italic
       font-weight 100
     div.selected
       selected-div()
     div.current
-      border 1px solid #096AC8
-      background-color rgba(255, 255, 255, 0.63)
+      background-color rgba(126, 165, 186, 1)
       color #1D4D7A
       font-weight bold
-      text-shadow 1px 1px 1px rgba(0,0,0,0.1)
     div.cursor
       span
         text-decoration underline
