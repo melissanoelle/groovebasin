@@ -1610,6 +1610,7 @@ function renderQueue() {
       labelBoxDom.style.backgroundColor = label.color;
       labelBoxDom.setAttribute('title', label.name);
       middleDom.children[0].appendChild(labelBoxDom);
+      labelBoxDom.addEventListener('click', onAddRemoveLabelContextMenu);
     }
   }
 
